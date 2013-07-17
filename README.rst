@@ -2,7 +2,7 @@
        nose-timelimit
 ===========================
 
-`nose-timelimit` is a nose plugin that allows you automatically skip slow tests.
+`nose-timelimit` is a nose plugin that allows you automatically skip tests that are too slow.
 
 It requires at least one run with the whole suite to register the timings. If a test fails timings 
 are not registered for it (thus it will never get skipped).
