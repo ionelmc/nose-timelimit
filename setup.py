@@ -5,7 +5,7 @@ import os
 
 setup(
     name = "nose-timelimit",
-    version = "0.1.0",
+    version = "0.1.1",
     url = 'https://github.com/ionelmc/nose-timelimit',
     download_url = '',
     license = 'BSD',
@@ -35,5 +35,5 @@ setup(
         'nose.plugins.0.10': [
             'nosetimelimit=nosetimelimit:TimeLimitPlugin'
         ]
-    },    
+    },
 )

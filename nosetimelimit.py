@@ -75,6 +75,8 @@ class TimeLimitPlugin(Plugin):
     addFailure = addError
 
     def prepareTestCase(self, test):
+        if self.limit is None:
+            return
         test_id = test.id()
         duration = self.tests.get(test_id, 0)
         if duration > self.limit:
