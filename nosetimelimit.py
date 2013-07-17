@@ -1,18 +1,13 @@
-__test__ = False
-
 import logging
+logger = logging.getLogger(__name__)
 import os
-import sys
 import time
 from nose.plugins import Plugin
-from nose import SkipTest
-err = sys.__stderr__
 try:
     from cPickle import dump, load
 except ImportError:
     from pickle import dump, load
 
-logger = logging.getLogger(__name__)
 
 
 class TimeLimitPlugin(Plugin):
@@ -54,7 +49,7 @@ class TimeLimitPlugin(Plugin):
             logger.debug('IO error reading %r (%s)', self.id_file, exc)
             self.tests = {}
 
-    def finalize(self, result):
+    def finalize(self, _result):
         """Save new ids file, if needed.
         """
         with open(self.id_file, 'wb') as fh:
@@ -88,3 +83,5 @@ class TimeLimitPlugin(Plugin):
                 result.addSkip(test, "Last run took %.04f seconds. Too slow !" % duration)
                 result.stopTest(test)
             return skipper
+
+__test__ = False
