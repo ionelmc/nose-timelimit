@@ -24,3 +24,17 @@ Requirements
 
 Known to work with ``nose 1.3``, it may work with nose as old as ``0.10`` - try it.
 
+Example
+=======
+
+On first run:
+
+.. image:: https://github.com/ionelmc/nose-timelimit/raw/master/docs/1st-run.png
+    :alt: Sample error page
+    :target: https://github.com/ionelmc/nose-timelimit/raw/master/docs/1st-run.png
+    
+And on second run:
+
+.. image:: https://github.com/ionelmc/nose-timelimit/raw/master/docs/2nd-run.png
+    :alt: Sample error page
+    :target: https://github.com/ionelmc/nose-timelimit/raw/master/docs/2nd-run.png
