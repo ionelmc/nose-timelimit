@@ -38,3 +38,8 @@ And on second run:
 .. image:: https://github.com/ionelmc/nose-timelimit/raw/master/docs/2nd-run.png
     :alt: Sample error page
     :target: https://github.com/ionelmc/nose-timelimit/raw/master/docs/2nd-run.png
+
+.. image:: https://d2weczhvl823v0.cloudfront.net/ionelmc/nose-timelimit/trend.png
+   :alt: Bitdeli badge
+   :target: https://bitdeli.com/free
+
