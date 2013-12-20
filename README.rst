@@ -2,6 +2,10 @@
        nose-timelimit
 ===========================
 
+.. image:: https://badge.fury.io/py/nose-timelimit.png
+    :alt: PYPI Package
+    :target: https://pypi.python.org/pypi/nose-timelimit
+    
 `nose-timelimit` is a nose plugin that allows you automatically skip tests that are too slow.
 
 It requires at least one run with the whole suite to register the timings. If a test fails timings 
